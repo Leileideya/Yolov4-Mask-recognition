@@ -58,7 +58,7 @@ python3 app.py
 提取码：3243 
 
 # 界面效果
-!(https://github.com/Leileideya/Yolov4-Mask-recognition/blob/%E7%9B%B8%E5%85%B3%E6%96%87%E4%BB%B6/1.png)  
-!(https://github.com/Leileideya/Yolov4-Mask-recognition/blob/%E7%9B%B8%E5%85%B3%E6%96%87%E4%BB%B6/2.png)
+![Image text](https://raw.githubusercontent.com/Leileideya/Yolov4-Mask-recognition/%E7%9B%B8%E5%85%B3%E6%96%87%E4%BB%B6/1.png)  
+![Image text](https://raw.githubusercontent.com/Leileideya/Yolov4-Mask-recognition/%E7%9B%B8%E5%85%B3%E6%96%87%E4%BB%B6/2.png)
 # mAP
-!(https://github.com/Leileideya/Yolov4-Mask-recognition/blob/%E7%9B%B8%E5%85%B3%E6%96%87%E4%BB%B6/chart_yolov4-mask.png)
+![Image text](https://raw.githubusercontent.com/Leileideya/Yolov4-Mask-recognition/%E7%9B%B8%E5%85%B3%E6%96%87%E4%BB%B6/chart_yolov4-mask.png)
