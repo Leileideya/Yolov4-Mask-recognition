@@ -1,0 +1,15 @@
+.
+├── data
+│   ├── data_dlib
+│   ├── data_faces_from_camera
+│   └── features_all.csv
+├── face_descriptor_from_camera.py
+├── face_reco_from_camera_ot_multi_people.py
+├── face_reco_from_camera_ot_single_person.py
+├── face_reco_from_camera.py
+├── features_extraction_to_csv.py
+├── get_faces_from_camera.py
+├── how_to_use_camera.py
+└── simsun.ttc
+
+3 directories, 9 files
