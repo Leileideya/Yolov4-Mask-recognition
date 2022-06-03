@@ -1,0 +1,425 @@
+.
+├── 2007_test.txt
+├── 2007_train.txt
+├── 3rdparty
+│   ├── pthreads
+│   └── stb
+├── backup
+│   └── yolov4-mask_best.weights
+├── bad.list
+├── build
+│   └── darknet
+├── build.ps1
+├── build.sh
+├── cfg
+│   ├── 9k.labels
+│   ├── 9k.names
+│   ├── 9k.tree
+│   ├── alexnet.cfg
+│   ├── cd53paspp-gamma.cfg
+│   ├── cifar.cfg
+│   ├── cifar.test.cfg
+│   ├── coco9k.map
+│   ├── coco.data
+│   ├── coco.names
+│   ├── combine9k.data
+│   ├── crnn.train.cfg
+│   ├── csdarknet53-omega.cfg
+│   ├── cspx-p7-mish.cfg
+│   ├── cspx-p7-mish_hp.cfg
+│   ├── cspx-p7-mish-omega.cfg
+│   ├── csresnext50-panet-spp.cfg
+│   ├── csresnext50-panet-spp-original-optimal.cfg
+│   ├── darknet19_448.cfg
+│   ├── darknet19.cfg
+│   ├── darknet53_448_xnor.cfg
+│   ├── darknet53.cfg
+│   ├── darknet.cfg
+│   ├── densenet201.cfg
+│   ├── efficientnet_b0.cfg
+│   ├── efficientnet-lite3.cfg
+│   ├── enet-coco.cfg
+│   ├── extraction22k.cfg
+│   ├── extraction.cfg
+│   ├── extraction.conv.cfg
+│   ├── Gaussian_yolov3_BDD.cfg
+│   ├── go.test.cfg
+│   ├── gru.cfg
+│   ├── imagenet1k.data
+│   ├── imagenet22k.dataset
+│   ├── imagenet9k.hierarchy.dataset
+│   ├── imagenet.labels.list
+│   ├── imagenet.shortnames.list
+│   ├── inet9k.map
+│   ├── jnet-conv.cfg
+│   ├── lstm.train.cfg
+│   ├── openimages.data
+│   ├── resnet101.cfg
+│   ├── resnet152.cfg
+│   ├── resnet152_trident.cfg
+│   ├── resnet50.cfg
+│   ├── resnext152-32x4d.cfg
+│   ├── rnn.cfg
+│   ├── rnn.train.cfg
+│   ├── strided.cfg
+│   ├── t1.test.cfg
+│   ├── tiny.cfg
+│   ├── tiny-yolo.cfg
+│   ├── tiny-yolo-voc.cfg
+│   ├── tiny-yolo_xnor.cfg
+│   ├── vgg-16.cfg
+│   ├── vgg-conv.cfg
+│   ├── voc.data
+│   ├── voc-mask.data
+│   ├── writing.cfg
+│   ├── yolo.2.0.cfg
+│   ├── yolo9000.cfg
+│   ├── yolo.cfg
+│   ├── yolov1
+│   ├── yolov2.cfg
+│   ├── yolov2-tiny.cfg
+│   ├── yolov2-tiny-voc.cfg
+│   ├── yolov2-voc.cfg
+│   ├── yolov3_5l.cfg
+│   ├── yolov3.cfg
+│   ├── yolov3.coco-giou-12.cfg
+│   ├── yolov3-openimages.cfg
+│   ├── yolov3-spp.cfg
+│   ├── yolov3-tiny_3l.cfg
+│   ├── yolov3-tiny.cfg
+│   ├── yolov3-tiny_obj.cfg
+│   ├── yolov3-tiny_occlusion_track.cfg
+│   ├── yolov3-tiny-prn.cfg
+│   ├── yolov3-tiny_xnor.cfg
+│   ├── yolov3-voc.cfg
+│   ├── yolov3-voc.yolov3-giou-40.cfg
+│   ├── yolov4.cfg
+│   ├── yolov4-csp.cfg
+│   ├── yolov4-custom.cfg
+│   ├── yolov4-mask.cfg
+│   ├── yolov4-mask-test.cfg
+│   ├── yolov4-tiny-3l.cfg
+│   ├── yolov4-tiny.cfg
+│   ├── yolov4-tiny_contrastive.cfg
+│   ├── yolov4-tiny-custom.cfg
+│   ├── yolov4x-mish.cfg
+│   ├── yolo-voc.2.0.cfg
+│   └── yolo-voc.cfg
+├── cmake
+│   ├── Modules
+│   ├── vcpkg_linux_cuda.diff
+│   ├── vcpkg_linux.diff
+│   ├── vcpkg_osx.diff
+│   ├── vcpkg_windows_cuda.diff
+│   └── vcpkg_windows.diff
+├── CMakeLists.txt
+├── darknet
+├── DarknetConfig.cmake.in
+├── darknet_images.py
+├── darknet.py
+├── darknet_video.py
+├── data
+│   ├── 9k.tree
+│   ├── coco9k.map
+│   ├── coco.names
+│   ├── dog.jpg
+│   ├── eagle.jpg
+│   ├── giraffe.jpg
+│   ├── goal.txt
+│   ├── horses.jpg
+│   ├── imagenet.labels.list
+│   ├── imagenet.shortnames.list
+│   ├── labels
+│   ├── openimages.names
+│   ├── person.jpg
+│   ├── scream.jpg
+│   ├── voc-mask.names
+│   └── voc.names
+├── draw_pr.py
+├── genfiles.py
+├── image_yolov3.sh
+├── image_yolov4.sh
+├── include
+│   ├── darknet.h
+│   └── yolo_v2_class.hpp
+├── json_mjpeg_streams.sh
+├── LICENSE
+├── Makefile
+├── net_cam_v3.sh
+├── net_cam_v4.sh
+├── obj
+│   ├── activation_kernels.o
+│   ├── activation_layer.o
+│   ├── activations.o
+│   ├── art.o
+│   ├── avgpool_layer_kernels.o
+│   ├── avgpool_layer.o
+│   ├── batchnorm_layer.o
+│   ├── blas_kernels.o
+│   ├── blas.o
+│   ├── box.o
+│   ├── captcha.o
+│   ├── cifar.o
+│   ├── classifier.o
+│   ├── coco.o
+│   ├── col2im_kernels.o
+│   ├── col2im.o
+│   ├── compare.o
+│   ├── connected_layer.o
+│   ├── conv_lstm_layer.o
+│   ├── convolutional_kernels.o
+│   ├── convolutional_layer.o
+│   ├── cost_layer.o
+│   ├── crnn_layer.o
+│   ├── crop_layer_kernels.o
+│   ├── crop_layer.o
+│   ├── dark_cuda.o
+│   ├── darknet.o
+│   ├── data.o
+│   ├── demo.o
+│   ├── detection_layer.o
+│   ├── detector.o
+│   ├── dice.o
+│   ├── dropout_layer_kernels.o
+│   ├── dropout_layer.o
+│   ├── gaussian_yolo_layer.o
+│   ├── gemm.o
+│   ├── go.o
+│   ├── gru_layer.o
+│   ├── http_stream.o
+│   ├── im2col_kernels.o
+│   ├── im2col.o
+│   ├── image.o
+│   ├── image_opencv.o
+│   ├── layer.o
+│   ├── list.o
+│   ├── local_layer.o
+│   ├── lstm_layer.o
+│   ├── matrix.o
+│   ├── maxpool_layer_kernels.o
+│   ├── maxpool_layer.o
+│   ├── network_kernels.o
+│   ├── network.o
+│   ├── nightmare.o
+│   ├── normalization_layer.o
+│   ├── option_list.o
+│   ├── parser.o
+│   ├── region_layer.o
+│   ├── reorg_layer.o
+│   ├── reorg_old_layer.o
+│   ├── rnn_layer.o
+│   ├── rnn.o
+│   ├── rnn_vid.o
+│   ├── route_layer.o
+│   ├── sam_layer.o
+│   ├── scale_channels_layer.o
+│   ├── shortcut_layer.o
+│   ├── softmax_layer.o
+│   ├── super.o
+│   ├── swag.o
+│   ├── tag.o
+│   ├── tree.o
+│   ├── upsample_layer.o
+│   ├── utils.o
+│   ├── voxel.o
+│   ├── writing.o
+│   ├── yolo_layer.o
+│   └── yolo.o
+├── __pycache__
+│   └── darknet.cpython-36.pyc
+├── README.md
+├── results
+│   └── tmp.txt
+├── reval_voc.py
+├── scripts
+│   ├── dice_label.sh
+│   ├── gen_anchors.py
+│   ├── gen_tactic.sh
+│   ├── get_coco2017.sh
+│   ├── get_coco_dataset.sh
+│   ├── get_imagenet_train.sh
+│   ├── get_openimages_dataset.py
+│   ├── imagenet_label.sh
+│   ├── install_OpenCV4.sh
+│   ├── kitti2yolo.py
+│   ├── kmeansiou.c
+│   ├── log_parser
+│   ├── README.md
+│   ├── reval_voc.py
+│   ├── reval_voc_py3.py
+│   ├── setup.ps1
+│   ├── setup.sh
+│   ├── testdev2017.txt
+│   ├── voc_eval.py
+│   ├── voc_eval_py3.py
+│   ├── voc_label_difficult.py
+│   ├── voc_label.py
+│   └── windows
+├── src
+│   ├── activation_kernels.cu
+│   ├── activation_layer.c
+│   ├── activation_layer.h
+│   ├── activations.c
+│   ├── activations.h
+│   ├── art.c
+│   ├── avgpool_layer.c
+│   ├── avgpool_layer.h
+│   ├── avgpool_layer_kernels.cu
+│   ├── batchnorm_layer.c
+│   ├── batchnorm_layer.h
+│   ├── blas.c
+│   ├── blas.h
+│   ├── blas_kernels.cu
+│   ├── box.c
+│   ├── box.h
+│   ├── captcha.c
+│   ├── cifar.c
+│   ├── classifier.c
+│   ├── classifier.h
+│   ├── coco.c
+│   ├── col2im.c
+│   ├── col2im.h
+│   ├── col2im_kernels.cu
+│   ├── compare.c
+│   ├── connected_layer.c
+│   ├── connected_layer.h
+│   ├── conv_lstm_layer.c
+│   ├── conv_lstm_layer.h
+│   ├── convolutional_kernels.cu
+│   ├── convolutional_layer.c
+│   ├── convolutional_layer.h
+│   ├── cost_layer.c
+│   ├── cost_layer.h
+│   ├── cpu_gemm.c
+│   ├── crnn_layer.c
+│   ├── crnn_layer.h
+│   ├── crop_layer.c
+│   ├── crop_layer.h
+│   ├── crop_layer_kernels.cu
+│   ├── dark_cuda.c
+│   ├── dark_cuda.h
+│   ├── darknet.c
+│   ├── darkunistd.h
+│   ├── data.c
+│   ├── data.h
+│   ├── deconvolutional_kernels.cu
+│   ├── deconvolutional_layer.c
+│   ├── deconvolutional_layer.h
+│   ├── demo.c
+│   ├── demo.h
+│   ├── detection_layer.c
+│   ├── detection_layer.h
+│   ├── detector.c
+│   ├── dice.c
+│   ├── dropout_layer.c
+│   ├── dropout_layer.h
+│   ├── dropout_layer_kernels.cu
+│   ├── gaussian_yolo_layer.c
+│   ├── gaussian_yolo_layer.h
+│   ├── gemm.c
+│   ├── gemm.h
+│   ├── getopt.c
+│   ├── getopt.h
+│   ├── gettimeofday.c
+│   ├── gettimeofday.h
+│   ├── go.c
+│   ├── gru_layer.c
+│   ├── gru_layer.h
+│   ├── httplib.h
+│   ├── http_stream.cpp
+│   ├── http_stream.h
+│   ├── im2col.c
+│   ├── im2col.h
+│   ├── im2col_kernels.cu
+│   ├── image.c
+│   ├── image.h
+│   ├── image_opencv.cpp
+│   ├── image_opencv.h
+│   ├── layer.c
+│   ├── layer.h
+│   ├── list.c
+│   ├── list.h
+│   ├── local_layer.c
+│   ├── local_layer.h
+│   ├── lstm_layer.c
+│   ├── lstm_layer.h
+│   ├── matrix.c
+│   ├── matrix.h
+│   ├── maxpool_layer.c
+│   ├── maxpool_layer.h
+│   ├── maxpool_layer_kernels.cu
+│   ├── network.c
+│   ├── network.h
+│   ├── network_kernels.cu
+│   ├── nightmare.c
+│   ├── normalization_layer.c
+│   ├── normalization_layer.h
+│   ├── option_list.c
+│   ├── option_list.h
+│   ├── parser.c
+│   ├── parser.h
+│   ├── region_layer.c
+│   ├── region_layer.h
+│   ├── reorg_layer.c
+│   ├── reorg_layer.h
+│   ├── reorg_old_layer.c
+│   ├── reorg_old_layer.h
+│   ├── rnn.c
+│   ├── rnn_layer.c
+│   ├── rnn_layer.h
+│   ├── rnn_vid.c
+│   ├── route_layer.c
+│   ├── route_layer.h
+│   ├── sam_layer.c
+│   ├── sam_layer.h
+│   ├── scale_channels_layer.c
+│   ├── scale_channels_layer.h
+│   ├── shortcut_layer.c
+│   ├── shortcut_layer.h
+│   ├── softmax_layer.c
+│   ├── softmax_layer.h
+│   ├── super.c
+│   ├── swag.c
+│   ├── tag.c
+│   ├── tree.c
+│   ├── tree.h
+│   ├── upsample_layer.c
+│   ├── upsample_layer.h
+│   ├── utils.c
+│   ├── utils.h
+│   ├── version.h
+│   ├── version.h.in
+│   ├── voxel.c
+│   ├── writing.c
+│   ├── yolo.c
+│   ├── yolo_console_dll.cpp
+│   ├── yolo_layer.c
+│   ├── yolo_layer.h
+│   └── yolo_v2_class.cpp
+├── testfiles
+│   ├── img10.jpg
+│   ├── img11.jpg
+│   ├── img12.jpg
+│   ├── img1.jpg
+│   ├── img2.jpg
+│   ├── img3.jpg
+│   ├── img4.jpg
+│   ├── img5.jpg
+│   ├── img6.jpg
+│   ├── img7.jpg
+│   ├── img8.jpg
+│   ├── img9.jpg
+│   ├── kouzhao1_masked.avi
+│   ├── kouzhao1_masked.mp4
+│   ├── kouzhao1.mp4
+│   ├── kouzhao1.txt
+│   ├── kouzhao2_masked.avi
+│   ├── kouzhao2.mp4
+│   └── kouzhao2.txt
+├── video_yolov3.sh
+├── video_yolov4.sh
+├── VOCdevkit
+│   └── VOC2007
+└── voc_eval.py
+
+23 directories, 399 files
